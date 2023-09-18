@@ -13,7 +13,8 @@ class UserConstraint
 };
 
 
-//this is not how i like my brackets but copilot is being a jerk
+// a point is fully constrained when it has a unique address for every dimension
+// these constrains will have many sources and can either be explicit or defined by interactions of other objects such as collisions of 3 planes or 2 non-parallel lines
 template <std::size_t numberOfDims> class Point
 {
     private:
@@ -26,6 +27,13 @@ template <std::size_t numberOfDims> class Point
         }
 
 
+
+};
+
+// line must be described by two points.
+
+class Line
+{
 
 };
 
