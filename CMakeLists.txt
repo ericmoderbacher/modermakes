@@ -4,4 +4,4 @@ project(Lua_Aided_Design)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(Lua_Aided_Design startingPoint.cpp)
+add_executable(Lua_Aided_Design source/startingPoint.cpp)
