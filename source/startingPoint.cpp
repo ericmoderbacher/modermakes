@@ -15,10 +15,11 @@ class UserConstraint
 
 // a point is fully constrained when it has a unique address for every dimension
 // these constrains will have many sources and can either be explicit or defined by interactions of other objects such as collisions of 3 planes or 2 non-parallel lines
-template <std::size_t numberOfDims> class Point
+class Point
 {
     private:
-        std::array<u_int64_t, numberOfDims> spatialAddresses; // this is private because the only time this should be set by a user is if they are specifically using a user constraint
+        std::array<u_int64_t, 3> spatialAddresses; // this is private because the only time this should be set by a user is if they are specifically using a user constraint
+        std::array<bool, 3> addressesConstrained;
 
     public:
         Point(std::vector<UserConstraint> constraints) //esm todo change to a virtual base class constraint rather than just user constraints
@@ -34,6 +35,8 @@ template <std::size_t numberOfDims> class Point
 
 class Line
 {
+private:
+    std::array<Point, 2> Points;
 
 };
 
