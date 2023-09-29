@@ -3,7 +3,7 @@
 
 #Except the ones i want (and their contents):
 !assets/**
-!source/**
+!source/*
 
 
 
