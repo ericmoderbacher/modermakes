@@ -2,8 +2,8 @@
 */
 
 #Except the ones i want (and their contents):
-!assests/*
-!source/*
+!assets/**
+!source/**
 
 
 
