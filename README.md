@@ -76,6 +76,25 @@ instead of normal binary each bit defines which havel of the space we are in.  o
 
 
 
+How do i establish things like origins and axis?
+I think the origin might not be super useful to me in the traditional sense.
+
+I think that axis will be used, but more for determining plumness or defining other parts.
+
+how are angles going to work?  Angles are typically floating point so there might not be too much of an analog here, right?  Well technically angles can trainslate to rise over run so i guess if i used that concept i could still define angles without sub integer precision
+
+
+
+
+
+
+
+
+other ideas:
+every geometry object uses a pointer that it moves between lists of constrained and unconstrained geometries
+
+when an object gets created it immediately exists in the unconstrained list and it only moves out when it has met constrain rules
+
 
 
 
@@ -94,6 +113,14 @@ cube.addConstraint(numberOfDimentions(3));
 lad::point<3> centerPoint(0,0,0); //origin
 
 cube.addGeometry(centerPoint)
+
+
+more thoughts:
+
+every time something gets added outside of the current bounding box the entire geometry has to be reset and the integer distances have to be reset.
+this could be delt with by having the user set an "approximate max bounding box" at the beginning.
+
+
 
 
 
