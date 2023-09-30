@@ -23,6 +23,9 @@ public:
     point(constraint, constraint, constraint);
 
     bool isConstrained();
+
+    //function that accepts pointer to another point and returns a distance
+    uint64_t * distance(point *);
 };
 
 #endif //LUA_AIDED_DESIGN_POINT_H
