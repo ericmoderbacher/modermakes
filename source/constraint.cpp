@@ -5,7 +5,7 @@
 #include "constraint.h"
 #include <cstdint>
 
-//kind of like an "is" constraint... might just be a place holder for now.
+//kind of like an "is" constraint... might just be a placeholder for now.
 constraint::constraint(uint64_t * subject)
 {
     //set the predicate to a function that always returns true so long as the subject is not null.

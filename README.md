@@ -38,21 +38,9 @@ An Open Source Appliance Foundation Project, that lets users draft physical obje
 
 
 
-types of geometry:
+Warning - this is going to be weird for a while.
 
-Point
-3 64 bit integers
-plus any user defined data
-
-Line
-references to 2 points
-plus any user defined data
-
-Plane
-references to 3 points
-or some combination of lines and points depending
-3 co linear points would throw exception or request another point.
-plus any user defined data
+Until/if this projects gets some traction im going to be using it as a place to test out ideas.  For example im trying to use unsigned 64 bit integers for all geometry... the idea being that it might mean that i wont have to deal with floating point errors.
 
 
 
