@@ -6,9 +6,11 @@
 #include "point.h"
 #include "constraint.h"
 
-point::point(uint64_t x, uint64_t y, uint64_t z): x(x), y(y), z(z), x_constraint(&x), y_constraint(&y), z_constraint(&z)
+point::point(std::optional<uint64_t> x, std::optional<uint64_t> y, std::optional<uint64_t> z)
 {
-    //point exists if you just create it with values.
+    if(x.has_value()){this->x_constraints.emplace_back(&x.value());};
+    if(y.has_value()){this->y_constraints.emplace_back(&y.value());}
+    if(z.has_value()){this->z_constraints.emplace_back(&z.value());}
 }
 
 
