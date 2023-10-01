@@ -23,7 +23,6 @@ private:
 public:
     point(std::optional<uint64_t>, std::optional<uint64_t>, std::optional<uint64_t>);
 
-
     bool isConstrained();
 
     //function that accepts pointer to another point and returns a distance
