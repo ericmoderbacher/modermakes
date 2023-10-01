@@ -6,14 +6,14 @@
 #define LUA_AIDED_DESIGN_CONSTRAINT_H
 
 #include <cstdint>
+#include <functional>
 
 class constraint
 {
 private:
     uint64_t * subject; //like of a sentence.
 
-    //function pointer to a function that returns bool if the constraint is met.
-    bool (*predicate)(uint64_t * subject);
+    std::function<bool(uint64_t *)> predicate;
 
 public:
     constraint(uint64_t *);
