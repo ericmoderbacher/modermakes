@@ -36,6 +36,8 @@ An Open Source Appliance Foundation Project, that lets users draft physical obje
   - There will be NO new filetypes only .lua .cmaketext .c .cpp .csv etc...
   - ci/cd friendly
 
+## Build Notes
+- Because im building on mac os i had to make a couple changes to the lua makefile.  You would have to do the same for now, I will make a more cross-platform build command soon (like when my ci-cd pipeline exists and i have cross-platform runners).
 
 
 Warning - this is going to be weird for a while.
