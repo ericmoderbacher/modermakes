@@ -9,7 +9,8 @@
 constraint::constraint(uint64_t * subject)
 {
     //set the predicate to a function that always returns true so long as the subject is not null.
-    this->predicate = [](uint64_t * subject) -> bool {return subject != nullptr;};
+    this->predicate = std::function<bool(uint64_t *)>([](uint64_t * subject) -> bool {return subject != nullptr;});
+
 
     //set the subject to the subject.
     this->subject = subject;
