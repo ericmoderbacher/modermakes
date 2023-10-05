@@ -37,8 +37,7 @@ An Open Source Appliance Foundation Project, that lets users draft physical obje
   - ci/cd friendly
 
 ## Build Notes
-- Because im building on mac os i had to make a couple changes to the lua makefile.  You would have to do the same for now, I will make a more cross-platform build command soon (like when my ci-cd pipeline exists and i have cross-platform runners).
-
+- If you are building in macOS like i am then you will need to comment out the "enable Linux goodies" (line 72) block of its makefile
 
 ## Warning - this is going to be weird for a while.
 - Until/if this projects gets some traction im going to be using it as a place to test out ideas.  For example im trying to use unsigned 64 bit integers for all geometry... the idea being that it might mean that i wont have to deal with floating point errors.
