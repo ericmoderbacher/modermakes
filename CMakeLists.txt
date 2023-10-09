@@ -15,7 +15,9 @@ ExternalProject_Add(
         INSTALL_COMMAND ""
 )
 
-add_library(Lua_Aided_Design SHARED)
+add_library(Lua_Aided_Design SHARED
+        source/point.cpp
+        source/line.cpp)
 target_sources(Lua_Aided_Design PRIVATE source/point.cpp source/constraint.cpp)
 target_include_directories(Lua_Aided_Design PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 

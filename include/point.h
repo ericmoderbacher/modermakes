@@ -8,20 +8,26 @@
 #include "constraint.h"
 #include <vector>
 #include <optional>
+#include <memory>
 
 class point
 {
 private:
-    uint64_t x;
-    uint64_t y;
-    uint64_t z;
+    std::unique_ptr<uint64_t> x;
+    std::unique_ptr<uint64_t> y;
+    std::unique_ptr<uint64_t> z;
 
     std::vector<constraint> x_constraints;
     std::vector<constraint> y_constraints;
     std::vector<constraint> z_constraints;
 
 public:
+    point();
     point(std::optional<uint64_t>, std::optional<uint64_t>, std::optional<uint64_t>);
+
+    //copy assignment operator
+    point & operator=(const point &);
+
 
     bool isConstrained();
 

@@ -13,6 +13,17 @@ point::point(std::optional<uint64_t> x, std::optional<uint64_t> y, std::optional
     if(z.has_value()){this->z_constraints.emplace_back(&z.value());};
 }
 
+//copy assignment operator
+point & point::operator=(const point & p)
+{
+    this->x_constraints = p.x_constraints;
+    this->y_constraints = p.y_constraints;
+    this->z_constraints = p.z_constraints;
+    return *this;
+}
+
+point::point() = default;
+
 
 
 
