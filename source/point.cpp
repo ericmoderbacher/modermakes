@@ -22,6 +22,12 @@ point & point::operator=(const point & p)
     return *this;
 }
 
+bool point::isConstrained()
+{
+
+    return false;
+}
+
 point::point() = default;
 
 
