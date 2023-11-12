@@ -22,10 +22,29 @@ point & point::operator=(const point & p)
     return *this;
 }
 
+//these next three functions are not of sound logic.
+//eventually they should validate the value is constrained to a single.... value
+bool point::isXConstrained()
+{
+    //check to see if the x constraints resolves to a single value
+    return this->x_constraints.size() == 1;
+}
+bool point::isYConstrained()
+{
+    //check to see if the y constraints resolves to a single value
+    return this->y_constraints.size() == 1;
+}
+bool point::isZConstrained()
+{
+    return this->z_constraints.size() == 1;
+}
+
 bool point::isConstrained()
 {
+    //check if all of the point's components are constrained
 
-    return false;
+    return (isXConstrained() && isYConstrained() && isZConstrained());
+
 }
 
 point::point() = default;

@@ -30,6 +30,9 @@ public:
 
 
     bool isConstrained();
+    bool isXConstrained();
+    bool isYConstrained();
+    bool isZConstrained();
 
     //function that accepts pointer to another point and returns a distance
     uint64_t * distance(point *);
