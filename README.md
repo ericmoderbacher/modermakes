@@ -16,6 +16,7 @@ An Open Source Appliance Foundation Project, that lets users draft physical obje
     - numbers do not need casting
     - users don't have to understand why we start counting at 0
     - users only have to learn one data structure
+- **But it allows us
 
 - **It is small no matter how you measure**
   - The entire language fits into a relatively small book. (echo?)

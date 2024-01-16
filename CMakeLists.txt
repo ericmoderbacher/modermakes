@@ -1,8 +1,7 @@
 cmake_minimum_required(VERSION 3.23)
 
 project(Lua_Aided_Design)
-
-set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD 23)
 
 include(ExternalProject)
 ExternalProject_Add(
@@ -18,6 +17,12 @@ ExternalProject_Add(
 add_library(Lua_Aided_Design SHARED
         source/point.cpp
         source/line.cpp
+        source/rasterCube.cpp
+        source/rasterCube.h
+        source/shellResolver.cpp
+        source/shellResolver.h
+        source/ridgid_object.cpp
+        source/ridgid_object.h
 )
 target_sources(Lua_Aided_Design PRIVATE source/point.cpp source/constraint.cpp)
 target_include_directories(Lua_Aided_Design PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)

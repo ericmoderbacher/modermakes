@@ -15,3 +15,5 @@ constraint::constraint(uint64_t * subject)
     //set the subject to the subject.
     this->subject = subject;
 }
+
+
