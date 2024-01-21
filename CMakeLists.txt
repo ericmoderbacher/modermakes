@@ -24,9 +24,12 @@ add_library(Lua_Aided_Design SHARED
         source/ridgid_object.cpp
         source/ridgid_object.h
 )
+
 target_sources(Lua_Aided_Design PRIVATE source/point.cpp source/constraint.cpp)
 target_include_directories(Lua_Aided_Design PUBLIC ${CMAKE_CURRENT_SOURCE_DIR}/include)
 
+add_executable(Lua_Aided_Design_Executable main.cpp)
+target_link_libraries(Lua_Aided_Design_Executable PRIVATE Lua_Aided_Design)
 
 # add compiler warnings per Jason Turner's advice https://github.com/cpp-best-practices/cppbestpractices/blob/master/02-Use_the_Tools_Available.md#compilers
 if (MSVC)

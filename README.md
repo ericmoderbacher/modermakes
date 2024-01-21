@@ -1,6 +1,12 @@
 # Lua-Aided-Design
 An Open Source Appliance Foundation Project, that lets users draft physical objects in lua.
 
+
+
+
+
+
+
 **Do we need a new CAD program?**
   - The best CAD programs are paid and their free tiers change policies often.
     - Their Version Control is built into the application reducing the compatibility with the version control systems we use.
