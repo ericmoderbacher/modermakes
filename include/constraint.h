@@ -8,15 +8,16 @@
 #include <cstdint>
 #include <functional>
 
+template<typename constraintType>
 class constraint
 {
 private:
-    uint64_t * subject; //like of a sentence.
+    constraintType * subject; //like of a sentence.
 
-    std::function<bool(uint64_t *)> predicate;
+    std::function<bool(constraintType *)> predicate;
 
 public:
-    constraint(uint64_t *);
+    constraint(constraintType *);
 };
 
 

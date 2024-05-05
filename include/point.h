@@ -10,16 +10,21 @@
 #include <optional>
 #include <memory>
 
+template<typename constraintType>
+
 class point
 {
 private:
-    std::unique_ptr<uint64_t> x;
-    std::unique_ptr<uint64_t> y;
-    std::unique_ptr<uint64_t> z;
+    std::unique_ptr<constraintType> x;
+    std::unique_ptr<constraintType> y;
+    std::unique_ptr<constraintType> z;
 
-    std::vector<constraint> x_constraints;
-    std::vector<constraint> y_constraints;
-    std::vector<constraint> z_constraints;
+    //This isnt quite right
+    //std::vector<constraintType> x_constraints;
+    //std::vector<constraintType> y_constraints;
+    //std::vector<constraintType> z_constraints;
+
+    //
 
 public:
     point();

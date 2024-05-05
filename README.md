@@ -1,40 +1,39 @@
+Eric Moderbacher's
 # Lua-Aided-Design
-An Open Source Appliance Foundation Project, that lets users draft physical objects in lua.
+
+Draft physical objects in C++ or at runtime with Lua.
+
+How drafting works:
+
+add 1D objects (points) to 1D containers(lines,circles,arcs,spines (and 1D lists/chains of those))
+
+add 1D objects and 2D objects (line segments, circles, arcs, splines (and 1 or 2d lists/chains of those)) to 2D containers (planes, surfaces)
+
+add 1D 2D and 3D objects to 3D container spaces (volumes)
+
+| 1D    | 2D                    | 3D |
+|-------|-----------------------|----|
+| Point | Line Segment          |    |
+|       | Arc                   |    |
+|       | Curve*                |    |
+|       | lists/chains of above |    |
+&ast; : not sure which types yet.
+
+
+|        | 1D    | 2D | 3D |   |
+|--------|-------|----|----|---|
+| **1D** | point |    |    |   |
+| **2D** |       |    |    |   |
+| **3D** |       |    |    |   |
+|        |       |    |    |   |
 
 
 
 
 
 
-
-**Do we need a new CAD program?**
-  - The best CAD programs are paid and their free tiers change policies often.
-    - Their Version Control is built into the application reducing the compatibility with the version control systems we use.
-  - I have not enjoyed using freecad, tinkercad or openscad, sorry.
-
-
-
-**But why Lua?** Yeah I know there are already quite a few CAD options out there... LAD does have some reasons to exist and they are:
-
-- **Lua is a great language for non-programmers**.
-  - The entire language fits into a relatively small book.
-  - Its designed so that you don't have to teach the user computer science to use it.
-    - numbers do not need casting
-    - users don't have to understand why we start counting at 0
-    - users only have to learn one data structure
-- **But it allows us
-
-- **It is small no matter how you measure**
-  - The entire language fits into a relatively small book. (echo?)
-  - Can run in a microcontroller
-  - lets c/c++ do the heavy lifting
-  
-- **Very Mature**
-  - Lua is 28 years old
-  - Lua is used in many AAA games
 
 ## (Target) Features
-  - Free and Open Source 
   - Version Controllable
   - Headlessness has priority
     - A view port could be added as a debugging and validation tool
