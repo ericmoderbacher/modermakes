@@ -21,6 +21,8 @@ add_library(Lua_Aided_Design SHARED
         source/plane.h
         include/lad_concepts.h
         include/path.h
+        source/int512_t.cpp
+        source/int512_t.h
 )
 
 target_sources(Lua_Aided_Design PRIVATE source/point.cpp source/constraint.cpp)
