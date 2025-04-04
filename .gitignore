@@ -1,5 +1,4 @@
 #Ignore all directories:
-*/
 
 #Except the ones i want (and their contents):
 !assets/*
