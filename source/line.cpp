@@ -7,6 +7,7 @@
 
 line::line(std::optional<std::unique_ptr<point>> start, std::optional<std::unique_ptr<point>> end)
 {
+
     if(start.has_value()){this->ends.first = std::move(start.value());};
     if(end.has_value()){this->ends.second = std::move(end.value());};
 }
