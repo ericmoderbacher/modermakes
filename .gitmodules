@@ -5,3 +5,6 @@
 	path = myDevContainer
 	url = https://github.com/ericmoderbacher/myDevContainer.git
 	branch = main
+[submodule "external/compositeInteger"]
+	path = external/compositeInteger
+	url = https://github.com/ericmoderbacher/compositeInteger

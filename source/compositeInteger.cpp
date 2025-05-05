@@ -1,19 +1,16 @@
-//
-// Created by Eric Moderbacher on 4/3/25.
-//
+//ericmoderbacher 4/3/25
 
-// int512_t.cpp
-#include "int512_t.h"
+#include "compositeInteger.h"
 #include <algorithm>
 #include <stdexcept>
 
-int512_t::int512_t(int64_t val) {
+compositeInteger::compositInteger<256>(int64_t val) {
     words.fill(0);
     words[0] = static_cast<uint64_t>(val);
 }
 
 // Arithmetic operators (simplified placeholders)
-int512_t int512_t::operator+(const int512_t &other) const {
+compositeInteger int512_t::operator+(const int512_t &other) const {
     int512_t result;
     uint64_t carry = 0;
     for (size_t i = 0; i < words.size(); ++i) {

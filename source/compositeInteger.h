@@ -52,7 +52,7 @@ struct int512_t {
 #endif // INT512_T_H
 
 // int512_t.cpp
-#include "int512_t.h"
+#include "compositeInteger.h"
 #include <algorithm>
 #include <stdexcept>
 
