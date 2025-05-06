@@ -6,7 +6,9 @@
 !include/*
 !tests/*
 !lua/*
-
+cmake-*
+.idea/
 
 
 /lua/
+/CMakeFiles/
