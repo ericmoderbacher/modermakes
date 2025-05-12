@@ -1,7 +1,8 @@
-Eric Moderbacher's
-# Lua-Aided-Design
+eric moderbacher(moders)'s
+# modermakes
 
-Draft physical objects in C++ or at runtime with Lua.
+describe and receive models of nD objects in C++ or at runtime with the command line and or Lua.
+
 
 How drafting works:
 
